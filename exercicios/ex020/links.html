@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liks</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+        a:visited{color: gray;
+
+        }
+        a:hover{
+            color: black;
+            text-decoration: underline;
+        }
+        a:active{
+            color: red;
+        }
+        .especial{
+            background-color: dimgray;
+        }
+        .especial::before{
+            content: '↣ ';
+        }
+        .especial::after{
+            content: ' ↢' ;
+            text-decoration: none;
+            font-weight: normal;
+            color: darkslategray;
+        }
+    </style>
+</head>
+<body>
+    <h1>personalizando links</h1>
+    <ul>
+        <li><a href="https://github.com" target="_blank" rel="external">Repositório GitHub</a></li>
+        <li><a href="https://www.instagram.com/david.domingosxz/" target="_blank" rel="external" class="especial">Instagram</a></li>
+        <li><a href="https://www.youtube.com" target="_blank" rel="external">YouTube</a></li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medias e HTML
+    </title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Tente abrir este site em dispositivos diferentes ou simplemente aumente e diminua o tamanho do seu navegador</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem Flexível">
+        <h2>Reproduzindo áudio</h2>
+        <p>Phonk fresh in rio</p>
+        <audio preload="auto" autoplay controls loop>
+            <source src="media/fresh-in-rio.mp3" type="audio/mpeg">
+            <source src="media/fresh-in-rio.ogg" type="audio/ogg">
+            <p>Infelizmente seu navegador não consegue reproduzir os áudios <a href="media/fresh-in-rio.mp3">clique aqui para baixar o áudio</a></p>
+        </audio>
+        <!--MP3 WAV OGG-->
+    </picture>
+</body>
+</html>
